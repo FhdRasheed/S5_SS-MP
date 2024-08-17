@@ -72,14 +72,18 @@ void main(){
                        }
                       }
                       
-                for(j=0;j<res;j++){
+                
                 if(exec==res&&visited[i]==0){
+                   for(j=0;j<res;j++){
                      available[j]+=alloc[i][j];
-                     count++;
-                     flag=1;
-                     visited[i]=1;
-                     safeseq[k++]=i;
                      }
+                      flag=1;
+                     
+
+                     visited[i]=1;
+                     count++;
+                     safeseq[k++]=i;
+                     
                      }
                    }
                      if(flag==0){
